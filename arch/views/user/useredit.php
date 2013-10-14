@@ -21,6 +21,7 @@ echo RFormHelper::input(
     array('id'=>'username',
         'name'=>'username',
         'class'=>'form-control',
+        'value'=>$user->name,
         'placeholder'=>$user->name,
     ));
 
@@ -65,6 +66,7 @@ echo RFormHelper::input(
     array('id'=>'weibo',
         'name'=>'weibo',
         'class'=>'form-control',
+        'value'=>$user->weibo,
         'placeholder'=>$user->weibo));
 
 echo RFormHelper::label("Introduction",'intro');
